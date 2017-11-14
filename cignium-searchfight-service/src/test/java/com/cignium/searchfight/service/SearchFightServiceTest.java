@@ -3,15 +3,10 @@ package com.cignium.searchfight.service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.junit.After;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.test.context.ContextConfiguration;
 //import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -58,6 +53,7 @@ public class SearchFightServiceTest {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	private void calculateRanking(List<SearchEngineResult> results, List<String> params) {
 		// Print result by param
 		params.forEach(p -> {

@@ -43,7 +43,6 @@ public class SearchFightServiceImpl implements SearchFightService {
 		while (!taskExecutor.isTerminated()) {}
 		
 		response.refresh();
-		//response.calculateRanking();
 		
 		return response;
 	}
